@@ -1,0 +1,35 @@
+.breadcrumbs__list {
+  max-width: 1300px;
+  display: flex;
+  margin: auto;
+  padding-top: 68px;
+  padding-bottom: 15px;
+  letter-spacing: 1.1px;
+}
+
+.breadcrumbs__item {
+  text-transform: uppercase;
+  padding-right: 19px;
+  position: relative;
+  font-size: 12px;
+  padding-left: 7px;
+
+  &:after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 15px;
+    height: 1px;
+    background-color: #a19f9e;
+    right: 0;
+    top: 5px;
+  }
+
+  &:last-child:after {
+    display: none;
+  }
+
+  &:first-child {
+    padding-left: 3px;
+  }
+}

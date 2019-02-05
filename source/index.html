@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>wood</title>
+  <link rel="preload" href="fonts/MuseoSansCyrl-500.woff" as="font">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+<body>
+<svg style="display: none;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <symbol id="icon-facebook" viewBox="0 0 96.124 96.123">
+    <path
+      d="M72.089.02L59.624 0C45.62 0 36.57 9.285 36.57 23.656v10.907H24.037a1.96 1.96 0 0 0-1.96 1.961v15.803a1.96 1.96 0 0 0 1.96 1.96H36.57v39.876a1.96 1.96 0 0 0 1.96 1.96h16.352a1.96 1.96 0 0 0 1.96-1.96V54.287h14.654a1.96 1.96 0 0 0 1.96-1.96l.006-15.803a1.963 1.963 0 0 0-1.961-1.961H56.842v-9.246c0-4.444 1.059-6.7 6.848-6.7l8.397-.003a1.96 1.96 0 0 0 1.959-1.96V1.98A1.96 1.96 0 0 0 72.089.02z"
+      fill="#a1a0a0"/>
+  </symbol>
+  <symbol id="icon-instagram" viewBox="0 0 97.395 97.395">
+    <path
+      d="M12.501 0h72.393c6.875 0 12.5 5.09 12.5 12.5v72.395c0 7.41-5.625 12.5-12.5 12.5H12.501C5.624 97.395 0 92.305 0 84.895V12.5C0 5.09 5.624 0 12.501 0zm58.447 10.821a4.395 4.395 0 0 0-4.383 4.385v10.495a4.396 4.396 0 0 0 4.383 4.385h11.008a4.398 4.398 0 0 0 4.385-4.385V15.206a4.397 4.397 0 0 0-4.385-4.385H70.948zm15.439 30.367h-8.572a28.486 28.486 0 0 1 1.25 8.355c0 16.2-13.556 29.332-30.275 29.332-16.718 0-30.272-13.132-30.272-29.332 0-2.904.438-5.708 1.25-8.355h-8.945v41.141a3.884 3.884 0 0 0 3.872 3.872h67.822a3.883 3.883 0 0 0 3.872-3.872V41.188h-.002zM48.789 29.533c-10.802 0-19.56 8.485-19.56 18.953s8.758 18.953 19.56 18.953c10.803 0 19.562-8.485 19.562-18.953s-8.758-18.953-19.562-18.953z"
+      fill="#a1a0a0"/>
+  </symbol>
+  <symbol id="icon-pinterest" viewBox="0 0 100.001 100.001">
+    <path
+      d="M43.081 66.14c-2.626 13.767-5.833 26.966-15.333 33.861-2.932-20.809 4.307-36.436 7.668-53.027-5.73-9.646.689-29.062 12.777-24.277 14.873 5.885-12.881 35.865 5.75 39.611 19.453 3.908 27.395-33.752 15.332-46-17.428-17.684-50.733-.403-46.637 24.916.996 6.191 7.391 8.068 2.555 16.611-11.154-2.473-14.484-11.27-14.055-23 .69-19.197 17.25-32.639 33.86-34.498 21.006-2.352 40.721 7.711 43.443 27.471 3.066 22.303-9.48 46.459-31.943 44.721-6.088-.473-8.645-3.489-13.417-6.389z"
+      fill="#a1a0a0"/>
+  </symbol>
+  <symbol id="icon-vk" viewBox="0 0 304.36 304.36">
+    <g id="XMLID_1_">
+      <path id="XMLID_807_" style="fill-rule:evenodd;clip-rule:evenodd;"
+            d="M261.945,175.576c10.096,9.857,20.752,19.131,29.807,29.982   c4,4.822,7.787,9.798,10.684,15.394c4.105,7.955,0.387,16.709-6.746,17.184l-44.34-0.02c-11.436,0.949-20.559-3.655-28.23-11.474   c-6.139-6.253-11.824-12.908-17.727-19.372c-2.42-2.642-4.953-5.128-7.979-7.093c-6.053-3.929-11.307-2.726-14.766,3.587   c-3.523,6.421-4.322,13.531-4.668,20.687c-0.475,10.441-3.631,13.186-14.119,13.664c-22.414,1.057-43.686-2.334-63.447-13.641   c-17.422-9.968-30.932-24.04-42.691-39.971C34.828,153.482,17.295,119.395,1.537,84.353C-2.01,76.458,0.584,72.22,9.295,72.07   c14.465-0.281,28.928-0.261,43.41-0.02c5.879,0.086,9.771,3.458,12.041,9.012c7.826,19.243,17.402,37.551,29.422,54.521   c3.201,4.518,6.465,9.036,11.113,12.216c5.142,3.521,9.057,2.354,11.476-3.374c1.535-3.632,2.207-7.544,2.553-11.434   c1.146-13.383,1.297-26.743-0.713-40.079c-1.234-8.323-5.922-13.711-14.227-15.286c-4.238-0.803-3.607-2.38-1.555-4.799   c3.564-4.172,6.916-6.769,13.598-6.769h50.111c7.889,1.557,9.641,5.101,10.721,13.039l0.043,55.663   c-0.086,3.073,1.535,12.192,7.07,14.226c4.43,1.448,7.35-2.096,10.008-4.905c11.998-12.734,20.561-27.783,28.211-43.366   c3.395-6.852,6.314-13.968,9.143-21.078c2.096-5.276,5.385-7.872,11.328-7.757l48.229,0.043c1.43,0,2.877,0.021,4.262,0.258   c8.127,1.385,10.354,4.881,7.844,12.817c-3.955,12.451-11.65,22.827-19.174,33.251c-8.043,11.129-16.645,21.877-24.621,33.072   C252.26,161.544,252.842,166.697,261.945,175.576L261.945,175.576z M261.945,175.576"
+            fill="#a1a0a0"/>
+    </g>
+  </symbol>
+  <symbol id="icon-youtube" viewBox="0 0 90 90">
+    <g>
+      <path id="YouTube__x28_alt_x29_"
+            d="M90,26.958C90,19.525,83.979,13.5,76.55,13.5h-63.1C6.021,13.5,0,19.525,0,26.958v36.084   C0,70.475,6.021,76.5,13.45,76.5h63.1C83.979,76.5,90,70.475,90,63.042V26.958z M36,60.225V26.33l25.702,16.947L36,60.225z"
+            fill="#a1a0a0"/>
+    </g>
+  </symbol>
+</svg>
+<header class="header">
+  <div class="header__menu-wrapper">
+    <div class="header__menu">
+      <nav class="left-nav">
+        <ul class="left-nav__list">
+          <li class="left-nav__item"><a href="#" class="left-nav__item-link">Паркет</a></li>
+          <li class="left-nav__item"><a href="#" class="left-nav__item-link">Керамика</a></li>
+        </ul>
+      </nav>
+      <nav class="center-nav">
+        <ul class="center-nav__list">
+          <li class="center-nav__item"><a href="#" class="center-nav__item-link">О Нас</a></li>
+          <li class="center-nav__item"><a href="#" class="center-nav__item-link">Контакты</a></li>
+          <li class="center-nav__item"><a href="#" class="center-nav__item-link">Дизайнерам и архитекторам</a></li>
+        </ul>
+      </nav>
+      <div class="feedback">
+        <a href="tel:+74955555555" class="feedback__tel">+7 (495) 555-55-55</a>
+        <button class="feedback__btn">Обратный звонок</button>
+      </div>
+    </div>
+  </div>
+  <div class="page-header__middle">
+    <picture>
+      <source type="image/webp" srcset="./img/header-logo.webp">
+      <img src="./img/header-logo.png" width="562" height="118" alt="header-logo" class="page-header__logo">
+    </picture>
+    <div class="header__slogan">Паркет <span class="header__slogan-dot"></span>Керамика</div>
+  </div>
+</header>
+<div class="breadcrumbs">
+  <div class="breadcrumbs__list">
+    <div class="breadcrumbs__item">
+      <a href="#" class="breadcrumbs__link">Главная</a>
+    </div>
+    <div class="breadcrumbs__item">
+      <a href="#" class="breadcrumbs__link">Паркет</a>
+    </div>
+    <div class="breadcrumbs__item">
+      <a href="#" class="breadcrumbs__link">Паркетная доска</a>
+    </div>
+  </div>
+</div>
+<div class="page-content">
+  <h1 class="page-content__title">Паркетная доска</h1>
+  <p class="page-content__description">
+    Паркетная доска занимает особое место среди материалов, используемых для отделки полов. Она сумела сохранить в себе
+    лучшие качества, присущее традиционному штучному паркету и обрести повышенные эксплуатационные характеристики,
+    свойственные инновационным продуктам. Паркетная доска универсальна. Великолепные напольные покрытия, созданные из
+    нее, украшают роскошные особняки, обычные квартиры, концертные, банкетные залы, офисы во многих городах России и
+    других стран мира. Выгодно приобрести замечательный материал в городе Москва предлагает компания ParketDocka.ru. Мы
+    работаем в этом сегменте рынка уже около 17 лет, входим в число лидеров продаж паркетной доски в стране и сможем
+    предложить вам именно то, что нужно!
+  </p>
+</div>
+<form class="filter filter__list">
+  <div class="filter__item">
+    <label class="filter__name" for="filter-length">
+      Длина
+    </label>
+    <div class="filter__select-wrapper">
+      <select name="filter-length" class="filter__select" id="filter-length">
+        <option class="select-opt" value="Все">Все</option>
+        <option class="select-opt" value="100cm">100</option>
+        <option value="110cm">110 см</option>
+        <option value="150cm">150 см</option>
+        <option value="200cm">200 см</option>
+        <option value="250cm">250 см</option>
+      </select>
+    </div>
+
+  </div>
+  <div class="filter__item">
+    <label class="filter__name" for="filter-width">
+      Ширина
+    </label>
+    <div class="filter__select-wrapper">
+      <select name="filter-width" class="filter__select" id="filter-width">
+        <option value="all">Все</option>
+        <option value="20,7cm">20.7 см</option>
+        <option value="13cm">13 см</option>
+        <option value="19cm">19 см</option>
+        <option value="12,5cm">12.5 см</option>
+        <option value="16,4cm">16.4 см</option>
+      </select>
+    </div>
+  </div>
+  <div class="filter__item">
+    <label class="filter__name" for="filter-thickness">
+      Толщина
+    </label>
+    <div class="filter__select-wrapper">
+      <select name="filter-thickness" class="filter__select" id="filter-thickness">
+        <option value="all">Все</option>
+        <option value="7mm">7 мм</option>
+        <option value="10mm">10 мм</option>
+        <option value="12mm">12 мм</option>
+        <option value="13mm">13 мм</option>
+        <option value="15mm">15 мм</option>
+      </select>
+    </div>
+  </div>
+  <div class="filter__item">
+    <label class="filter__name" for="filter-brand">
+      Бренд
+    </label>
+    <div class="filter__select-wrapper">
+      <select name="filter-brand" class="filter__select" id="filter-brand">
+        <option value="all">Все</option>
+        <option value="Black-forest">Black forest</option>
+        <option value="Vinci">Vinci</option>
+        <option value="Biehrer">Biehrer</option>
+        <option value="Old-floor">Old floor</option>
+      </select>
+    </div>
+  </div>
+  <div class="filter__item">
+    <label class="filter__name" for="filter-type">
+      Тип
+    </label>
+    <div class="filter__select-wrapper">
+      <select name="filter-type" class="filter__select" id="filter-type">
+        <option value="all">Все</option>
+        <option value="array-board">Массивная доска</option>
+        <option value="engineering-board">Инженерная доска</option>
+        <option value="parquet-board">Паркетная доска</option>
+        <option value="french-fir">Французска Елка</option>
+        <option value="terrace-board">Террасная доска</option>
+      </select>
+    </div>
+  </div>
+  <div class="filter__item">
+    <label class="filter__name" for="filter-wood-species">
+      Порода дерева
+    </label>
+    <div class="filter__select-wrapper">
+      <select name="filter-wood-species" class="filter__select" id="filter-wood-species">
+        <option value="all">Все</option>
+        <option value="nut">Орех</option>
+        <option value="oak">Дуб</option>
+        <option value="ash-tree">Ясень</option>
+        <option value="tick">Тик</option>
+        <option value="larch">Лиственница</option>
+        <option value="microberlinia">Зебрано</option>
+        <option value="eben">Эбен</option>
+      </select>
+    </div>
+  </div>
+  <div class="filter__item">
+    <label class="filter__name" for="filter-selection">
+      Селекция
+    </label>
+    <div class="filter__select-wrapper">
+      <select name="filter-selection" class="filter__select" id="filter-selection">
+        <option value="all">Все</option>
+        <option value="rustic">Рустик</option>
+        <option value="select">Селект</option>
+        <option value="natures">Натур</option>
+      </select>
+    </div>
+  </div>
+  <div class="filter__item">
+    <label class="filter__name" for="filter-finishing-treatment">
+      Финишная обработка
+    </label>
+    <div class="filter__select-wrapper">
+      <select name="filter-finishing-treatment" class="filter__select" id="filter-finishing-treatment">
+        <option value="all">Все</option>
+        <option value="varnish">Лак</option>
+        <option value="oil">Масло на основе натурального воска</option>
+      </select>
+    </div>
+  </div>
+  <div class="filter__item">
+    <label class="filter__name" for="filter-color">
+      Цвет
+    </label>
+    <div class="filter__select-wrapper">
+      <select name="filter-color" class="filter__select" id="filter-color">
+        <option value="all">Все</option>
+        <option value="light">Светлый</option>
+        <option value="dark">Темный</option>
+        <option value="color">Цветной</option>
+      </select>
+    </div>
+  </div>
+  <div class="filter__control-wrapper">
+    <button class="filter__control filter__control--hide">Свернуть</button>
+    <button class="filter__control filter__control--hide">Очистить</button>
+  </div>
+</form>
+<div class="catalog">
+  <div class="catalog__wrapper">
+    <div class="catalog__list">
+      <div class="catalog__item">
+        <picture>
+          <source type="image/webp" srcset="./img/catalog-img-1.webp">
+          <img src="./img/catalog-img-1.jpg" alt="Фото товара" width="300" height="300" class="catalog__item-img">
+        </picture>
+        <a href="#" class="catalog__reed-more">Подробнее</a>
+        <div class="catalog__item-brand">Ebony&Co</div>
+        <a href="#"><h3 class="catalog__item-title">Европейский дуб</h3></a>
+        <div class="catalog__item-type"> Тип: Ммассивная доска</div>
+      </div>
+      <div class="catalog__item">
+        <picture>
+          <source type="image/webp" srcset="./img/catalog-img-2.webp">
+          <img src="./img/catalog-img-2.jpg" alt="Фото товара" width="300" height="300" class="catalog__item-img">
+        </picture>
+        <a href="#" class="catalog__reed-more">Подробнее</a>
+        <div class="catalog__item-brand">Ebony&Co</div>
+        <a href="#"><h3 class="catalog__item-title">Континентальный дуб</h3></a>
+        <div class="catalog__item-type"> Тип: Ммассивная доска</div>
+      </div>
+      <div class="catalog__item">
+        <picture>
+          <source type="image/webp" srcset="./img/catalog-img-3.webp">
+          <img src="./img/catalog-img-3.jpg" alt="Фото товара" width="300" height="300" class="catalog__item-img">
+        </picture>
+        <a href="#" class="catalog__reed-more">Подробнее</a>
+        <div class="catalog__item-brand">Ebony&Co</div>
+        <a href="#"><h3 class="catalog__item-title">Амриканский белый дуб</h3></a>
+        <div class="catalog__item-type"> Тип: Ммассивная доска</div>
+      </div>
+      <div class="catalog__item">
+        <picture>
+          <source type="image/webp" srcset="./img/catalog-img-4.webp">
+          <img src="./img/catalog-img-4.jpg" alt="Фото товара" width="300" height="300" class="catalog__item-img">
+        </picture>
+        <a href="#" class="catalog__reed-more">Подробнее</a>
+        <div class="catalog__item-brand">Ebony&Co</div>
+        <a href="#"><h3 class="catalog__item-title">Амриканский белый дуб</h3></a>
+        <div class="catalog__item-type"> Тип: Ммассивная доска</div>
+      </div>
+      <div class="catalog__item">
+        <picture>
+          <source type="image/webp" srcset="./img/catalog-img-1.webp">
+          <img src="./img/catalog-img-1.jpg" alt="Фото товара" width="300" height="300" class="catalog__item-img">
+        </picture>
+        <a href="#" class="catalog__reed-more">Подробнее</a>
+        <div class="catalog__item-brand">Ebony&Co</div>
+        <a href="#"><h3 class="catalog__item-title">Европейский дуб</h3></a>
+        <div class="catalog__item-type"> Тип: Ммассивная доска</div>
+      </div>
+      <div class="catalog__item">
+        <picture>
+          <source type="image/webp" srcset="./img/catalog-img-2.webp">
+          <img src="./img/catalog-img-2.jpg" alt="Фото товара" width="300" height="300" class="catalog__item-img">
+        </picture>
+        <a href="#" class="catalog__reed-more">Подробнее</a>
+        <div class="catalog__item-brand">Ebony&Co</div>
+        <a href="#"><h3 class="catalog__item-title">Континентальный дуб</h3></a>
+        <div class="catalog__item-type"> Тип: Ммассивная доска</div>
+      </div>
+      <div class="catalog__item">
+        <picture>
+          <source type="image/webp" srcset="./img/catalog-img-3.webp">
+          <img src="./img/catalog-img-3.jpg" alt="Фото товара" width="300" height="300" class="catalog__item-img">
+        </picture>
+        <a href="#" class="catalog__reed-more">Подробнее</a>
+        <div class="catalog__item-brand">Ebony&Co</div>
+        <a href="#"><h3 class="catalog__item-title">Амриканский белый дуб</h3></a>
+        <div class="catalog__item-type"> Тип: Ммассивная доска</div>
+      </div>
+      <div class="catalog__item">
+        <picture>
+          <source type="image/webp" srcset="./img/catalog-img-4.webp">
+          <img src="./img/catalog-img-4.jpg" alt="Фото товара" width="300" height="300" class="catalog__item-img">
+        </picture>
+        <a href="#" class="catalog__reed-more">Подробнее</a>
+        <div class="catalog__item-brand">Ebony&Co</div>
+        <a href="#"><h3 class="catalog__item-title">Амриканский белый дуб</h3></a>
+        <div class="catalog__item-type"> Тип: Ммассивная доска</div>
+      </div>
+      <div class="catalog__item">
+        <picture>
+          <source type="image/webp" srcset="./img/catalog-img-1.webp">
+          <img src="./img/catalog-img-1.jpg" alt="Фото товара" width="300" height="300" class="catalog__item-img">
+        </picture>
+        <a href="#" class="catalog__reed-more">Подробнее</a>
+        <div class="catalog__item-brand">Ebony&Co</div>
+        <a href="#"><h3 class="catalog__item-title">Европейский дуб</h3></a>
+        <div class="catalog__item-type"> Тип: Ммассивная доска</div>
+      </div>
+      <div class="catalog__item">
+        <picture>
+          <source type="image/webp" srcset="./img/catalog-img-2.webp">
+          <img src="./img/catalog-img-2.jpg" alt="Фото товара" width="300" height="300" class="catalog__item-img">
+        </picture>
+        <a href="#" class="catalog__reed-more">Подробнее</a>
+        <div class="catalog__item-brand">Ebony&Co</div>
+        <a href="#"><h3 class="catalog__item-title">Континентальный дуб</h3></a>
+        <div class="catalog__item-type"> Тип: Ммассивная доска</div>
+      </div>
+      <div class="catalog__item">
+        <picture>
+          <source type="image/webp" srcset="./img/catalog-img-3.webp">
+          <img src="./img/catalog-img-3.jpg" alt="Фото товара" width="300" height="300" class="catalog__item-img">
+        </picture>
+        <a href="#" class="catalog__reed-more">Подробнее</a>
+        <div class="catalog__item-brand">Ebony&Co</div>
+        <a href="#"><h3 class="catalog__item-title">Амриканский белый дуб</h3></a>
+        <div class="catalog__item-type"> Тип: Ммассивная доска</div>
+      </div>
+      <div class="catalog__item">
+        <picture>
+          <source type="image/webp" srcset="./img/catalog-img-4.webp">
+          <img src="./img/catalog-img-4.jpg" alt="Фото товара" width="300" height="300" class="catalog__item-img">
+        </picture>
+        <a href="#" class="catalog__reed-more">Подробнее</a>
+        <div class="catalog__item-brand">Ebony&Co</div>
+        <a href="#"><h3 class="catalog__item-title">Амриканский белый дуб</h3></a>
+        <div class="catalog__item-type"> Тип: Ммассивная доска</div>
+      </div>
+      <div class="catalog__item">
+        <picture>
+          <source type="image/webp" srcset="./img/catalog-img-1.webp">
+          <img src="./img/catalog-img-1.jpg" alt="Фото товара" width="300" height="300" class="catalog__item-img">
+        </picture>
+        <a href="#" class="catalog__reed-more">Подробнее</a>
+        <div class="catalog__item-brand">Ebony&Co</div>
+        <a href="#"><h3 class="catalog__item-title">Европейский дуб</h3></a>
+        <div class="catalog__item-type"> Тип: Ммассивная доска</div>
+      </div>
+      <div class="catalog__item">
+        <picture>
+          <source type="image/webp" srcset="./img/catalog-img-2.webp">
+          <img src="./img/catalog-img-2.jpg" alt="Фото товара" width="300" height="300" class="catalog__item-img">
+        </picture>
+        <a href="#" class="catalog__reed-more">Подробнее</a>
+        <div class="catalog__item-brand">Ebony&Co</div>
+        <a href="#"><h3 class="catalog__item-title">Континентальный дуб</h3></a>
+        <div class="catalog__item-type"> Тип: Ммассивная доска</div>
+      </div>
+      <div class="catalog__item">
+        <picture>
+          <source type="image/webp" srcset="./img/catalog-img-3.webp">
+          <img src="./img/catalog-img-3.jpg" alt="Фото товара" width="300" height="300" class="catalog__item-img">
+        </picture>
+        <a href="#" class="catalog__reed-more">Подробнее</a>
+        <div class="catalog__item-brand">Ebony&Co</div>
+        <a href="#"><h3 class="catalog__item-title">Амриканский белый дуб</h3></a>
+        <div class="catalog__item-type"> Тип: Ммассивная доска</div>
+      </div>
+      <div class="catalog__item">
+        <picture>
+          <source type="image/webp" srcset="./img/catalog-img-4.webp">
+          <img src="./img/catalog-img-4.jpg" alt="Фото товара" width="300" height="300" class="catalog__item-img">
+        </picture>
+        <a href="#" class="catalog__reed-more">Подробнее</a>
+        <div class="catalog__item-brand">Ebony&Co</div>
+        <a href="#"><h3 class="catalog__item-title">Амриканский белый дуб</h3></a>
+        <div class="catalog__item-type"> Тип: Ммассивная доска</div>
+      </div>
+    </div>
+  </div>
+</div>
+<nav class="pagination">
+  <div class="pagination__wrapper">
+    <div class="pagination__control">
+      <a href="" class="pagination__links pagination-down"><span class="arrow-left"></span></a>
+    </div>
+    <div class="pagination__list-numbers">
+      <div class="pagination__number">
+        <a href="" class="pagination__links">1</a>
+      </div>
+      <div class="pagination__number">
+        <a href="" class="pagination__links">2</a>
+      </div>
+      <div class="pagination__number">
+        <a href="" class="pagination__links">3</a>
+      </div>
+      <div class="pagination__number">
+        <a href="" class="pagination__links">4</a>
+      </div>
+      <div class="pagination__number">
+        <a href="" class="pagination__links">5</a>
+      </div>
+    </div>
+    <div class="pagination__control">
+      <a href="" class="pagination__links pagination-down"><span class="arrow-right"></span></a>
+    </div>
+  </div>
+</nav>
+<footer class="footer">
+  <div class="footer__wrapper">
+    <div class="footer__row">
+      <a href="#" class="footer-logo-link">
+        <picture>
+          <source type="image/webp" srcset="./img/footer-logo.webp">
+          <img src="./img/footer-logo.png" width="221" height="46" class="footer-logo" alt="логотип">
+        </picture>
+      </a>
+      <div class="footer__contacts-list">
+        <div class="footer__contacts-address">Саввинская набережная, 23</div>
+        <a href="tel:+74957892803" class="footer__contacts-tel">+7 (495) 789-28-03</a>
+        <a href="mailto: info@archwood.ru" class="footer__contacts-email">info@archwood.ru</a>
+      </div>
+      <div class="footer__working-time-wrap">
+        <div class="footer__working-time-title">Время работы</div>
+        <div class="footer__working-time-">пн-пт 10:00 - 20:00</div>
+        <div class="footer__working-time-">сб-вс 11:00 - 19:00</div>
+      </div>
+      <div class="footer__social">
+        <div class="footer__social-list">
+          <a href="#" class="footer__social-item">
+            <svg role="img" class="" width="20" height="20">
+              <use xlink:href="#icon-facebook"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer__social-item footer__social-item--margin">
+            <svg role="img" class="" width="43" height="32">
+              <use xlink:href="#icon-vk"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer__social-item footer__social-item--instagram">
+            <svg role="img" class="" width="20" height="20">
+              <use xlink:href="#icon-instagram"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer__social-item">
+            <svg role="img" class="" width="20" height="20">
+              <use xlink:href="#icon-pinterest"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer__social-item footer__social-item--youtube">
+            <svg role="img" class="" width="28" height="26">
+              <use xlink:href="#icon-youtube"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <button class="footer__btn">Оставить заявку</button>
+    </div>
+    <div class="footer__row">
+      <div class="footer__copyright">© 2018 Arch Wood. Паркет и керамогранит. Все права защищены.</div>
+      <a href="" class="footer__privacy-policy">Политика конфиденциальности</a>
+      <div class="footer__development-wrap">
+        <a href="#" class="footer__development-link">
+          <picture>
+            <source type="image/webp" srcset="./img/footer-logo-dev.webp">
+            <img src="./img/footer-logo-dev.png" width="78" height="52" alt="logo">
+          </picture>
+
+        </a>
+        <div class="footer__development">Разработка сайта</div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
